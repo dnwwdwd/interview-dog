@@ -1,11 +1,11 @@
-package com.yupi.mianshiya.service;
+package com.hjj.interviewdog.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yupi.mianshiya.model.dto.questionBankQuestion.QuestionBankQuestionQueryRequest;
-import com.yupi.mianshiya.model.entity.QuestionBankQuestion;
-import com.yupi.mianshiya.model.vo.QuestionBankQuestionVO;
+import com.hjj.interviewdog.model.dto.questionBankQuestion.QuestionBankQuestionQueryRequest;
+import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
+import com.hjj.interviewdog.model.vo.QuestionBankQuestionVO;
 
 import javax.servlet.http.HttpServletRequest;
 

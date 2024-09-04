@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.model.dto.questionBankQuestion;
+package com.hjj.interviewdog.model.dto.questionBankQuestion;
 
-import com.yupi.mianshiya.common.PageRequest;
+import com.hjj.interviewdog.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

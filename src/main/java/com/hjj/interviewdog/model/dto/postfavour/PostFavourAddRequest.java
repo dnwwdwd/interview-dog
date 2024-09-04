@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.dto.postfavour;
+package com.hjj.interviewdog.model.dto.postfavour;
 
 import java.io.Serializable;
 import lombok.Data;

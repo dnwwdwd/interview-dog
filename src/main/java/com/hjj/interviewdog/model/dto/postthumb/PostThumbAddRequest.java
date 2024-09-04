@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.dto.postthumb;
+package com.hjj.interviewdog.model.dto.postthumb;
 
 import java.io.Serializable;
 import lombok.Data;

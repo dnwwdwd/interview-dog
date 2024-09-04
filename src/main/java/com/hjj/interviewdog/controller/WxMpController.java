@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.controller;
+package com.hjj.interviewdog.controller;
 
-import com.yupi.mianshiya.wxmp.WxMpConstant;
+import com.hjj.interviewdog.wxmp.WxMpConstant;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.vo;
+package com.hjj.interviewdog.model.vo;
 
 import java.io.Serializable;
 import java.util.Date;

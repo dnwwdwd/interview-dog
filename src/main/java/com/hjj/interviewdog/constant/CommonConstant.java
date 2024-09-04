@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.constant;
+package com.hjj.interviewdog.constant;
 
 /**
  * 通用常量

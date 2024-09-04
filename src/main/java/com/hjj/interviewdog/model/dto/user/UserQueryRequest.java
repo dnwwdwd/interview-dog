@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.model.dto.user;
+package com.hjj.interviewdog.model.dto.user;
 
-import com.yupi.mianshiya.common.PageRequest;
+import com.hjj.interviewdog.common.PageRequest;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

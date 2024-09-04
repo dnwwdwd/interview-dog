@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.utils;
+package com.hjj.interviewdog.utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeansException;

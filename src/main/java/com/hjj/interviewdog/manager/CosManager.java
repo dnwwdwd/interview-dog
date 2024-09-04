@@ -1,9 +1,9 @@
-package com.yupi.mianshiya.manager;
+package com.hjj.interviewdog.manager;
 
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.model.PutObjectResult;
-import com.yupi.mianshiya.config.CosClientConfig;
+import com.hjj.interviewdog.config.CosClientConfig;
 import java.io.File;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Component;

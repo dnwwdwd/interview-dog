@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.mapper;
+package com.hjj.interviewdog.mapper;
 
-import com.yupi.mianshiya.model.entity.PostThumb;
+import com.hjj.interviewdog.model.entity.PostThumb;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

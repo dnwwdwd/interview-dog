@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.dto.question;
+package com.hjj.interviewdog.model.dto.question;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
-package com.yupi.mianshiya.model.dto.postfavour;
+package com.hjj.interviewdog.model.dto.postfavour;
 
-import com.yupi.mianshiya.common.PageRequest;
-import com.yupi.mianshiya.model.dto.post.PostQueryRequest;
+import com.hjj.interviewdog.common.PageRequest;
+import com.hjj.interviewdog.model.dto.post.PostQueryRequest;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

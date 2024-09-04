@@ -1,9 +1,9 @@
-package com.yupi.mianshiya.job.once;
+package com.hjj.interviewdog.job.once;
 
-import com.yupi.mianshiya.esdao.PostEsDao;
-import com.yupi.mianshiya.model.dto.post.PostEsDTO;
-import com.yupi.mianshiya.model.entity.Post;
-import com.yupi.mianshiya.service.PostService;
+import com.hjj.interviewdog.esdao.PostEsDao;
+import com.hjj.interviewdog.model.dto.post.PostEsDTO;
+import com.hjj.interviewdog.model.entity.Post;
+import com.hjj.interviewdog.service.PostService;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.annotation.Resource;

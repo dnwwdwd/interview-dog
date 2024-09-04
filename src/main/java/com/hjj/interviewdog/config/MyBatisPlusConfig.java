@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.config;
+package com.hjj.interviewdog.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @author https://github.com/liyupi
  */
 @Configuration
-@MapperScan("com.yupi.mianshiya.mapper")
+@MapperScan("com.hjj.interviewdog.mapper")
 public class MyBatisPlusConfig {
 
     /**

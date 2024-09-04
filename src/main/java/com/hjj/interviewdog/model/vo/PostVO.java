@@ -1,7 +1,7 @@
-package com.yupi.mianshiya.model.vo;
+package com.hjj.interviewdog.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.yupi.mianshiya.model.entity.Post;
+import com.hjj.interviewdog.model.entity.Post;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;

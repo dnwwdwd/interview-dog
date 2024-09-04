@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.wxmp.handler;
+package com.hjj.interviewdog.wxmp.handler;
 
 import java.util.Map;
 import me.chanjar.weixin.common.error.WxErrorException;

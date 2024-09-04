@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.aop;
+package com.hjj.interviewdog.aop;
 
 import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +25,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.yupi.mianshiya.controller.*.*(..))")
+    @Around("execution(* com.hjj.interviewdog.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();

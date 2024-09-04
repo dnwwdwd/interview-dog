@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.esdao;
+package com.hjj.interviewdog.esdao;
 
-import com.yupi.mianshiya.model.dto.post.PostEsDTO;
+import com.hjj.interviewdog.model.dto.post.PostEsDTO;
 import java.util.List;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 

@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.annotation;
+package com.hjj.interviewdog.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

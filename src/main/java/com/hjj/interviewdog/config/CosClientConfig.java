@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.config;
+package com.hjj.interviewdog.config;
 
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.ClientConfig;

@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.exception;
+package com.hjj.interviewdog.exception;
 
-import com.yupi.mianshiya.common.ErrorCode;
+import com.hjj.interviewdog.common.ErrorCode;
 
 /**
  * 抛异常工具类

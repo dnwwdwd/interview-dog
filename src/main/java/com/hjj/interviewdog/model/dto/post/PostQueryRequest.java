@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.model.dto.post;
+package com.hjj.interviewdog.model.dto.post;
 
-import com.yupi.mianshiya.common.PageRequest;
+import com.hjj.interviewdog.common.PageRequest;
 import java.io.Serializable;
 import java.util.List;
 import lombok.Data;

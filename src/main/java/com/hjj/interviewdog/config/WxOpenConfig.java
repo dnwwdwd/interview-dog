@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.config;
+package com.hjj.interviewdog.config;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.enums;
+package com.hjj.interviewdog.model.enums;
 
 import java.util.Arrays;
 import java.util.List;

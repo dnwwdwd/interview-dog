@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.common;
+package com.hjj.interviewdog.common;
 
-import com.yupi.mianshiya.constant.CommonConstant;
+import com.hjj.interviewdog.constant.CommonConstant;
 import lombok.Data;
 
 /**

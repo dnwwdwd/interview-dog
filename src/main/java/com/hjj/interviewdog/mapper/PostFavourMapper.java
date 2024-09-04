@@ -1,12 +1,12 @@
-package com.yupi.mianshiya.mapper;
+package com.hjj.interviewdog.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.mianshiya.model.entity.Post;
-import com.yupi.mianshiya.model.entity.PostFavour;
+import com.hjj.interviewdog.model.entity.Post;
+import com.hjj.interviewdog.model.entity.PostFavour;
 import org.apache.ibatis.annotations.Param;
 
 /**

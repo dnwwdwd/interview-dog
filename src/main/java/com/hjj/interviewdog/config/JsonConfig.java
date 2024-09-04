@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.config;
+package com.hjj.interviewdog.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;

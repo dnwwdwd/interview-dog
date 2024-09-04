@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.utils;
+package com.hjj.interviewdog.utils;
 
 import java.net.InetAddress;
 import javax.servlet.http.HttpServletRequest;

@@ -1,15 +1,15 @@
-package com.yupi.mianshiya.service.impl;
+package com.hjj.interviewdog.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yupi.mianshiya.common.ErrorCode;
-import com.yupi.mianshiya.exception.BusinessException;
-import com.yupi.mianshiya.mapper.PostThumbMapper;
-import com.yupi.mianshiya.model.entity.Post;
-import com.yupi.mianshiya.model.entity.PostThumb;
-import com.yupi.mianshiya.model.entity.User;
-import com.yupi.mianshiya.service.PostService;
-import com.yupi.mianshiya.service.PostThumbService;
+import com.hjj.interviewdog.common.ErrorCode;
+import com.hjj.interviewdog.exception.BusinessException;
+import com.hjj.interviewdog.mapper.PostThumbMapper;
+import com.hjj.interviewdog.model.entity.Post;
+import com.hjj.interviewdog.model.entity.PostThumb;
+import com.hjj.interviewdog.model.entity.User;
+import com.hjj.interviewdog.service.PostService;
+import com.hjj.interviewdog.service.PostThumbService;
 import javax.annotation.Resource;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;

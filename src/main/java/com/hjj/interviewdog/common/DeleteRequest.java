@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.common;
+package com.hjj.interviewdog.common;
 
 import java.io.Serializable;
 import lombok.Data;

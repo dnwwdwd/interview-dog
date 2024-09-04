@@ -1,8 +1,8 @@
-package com.yupi.mianshiya.model.vo;
+package com.hjj.interviewdog.model.vo;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.mianshiya.model.entity.Question;
-import com.yupi.mianshiya.model.entity.QuestionBank;
+import com.hjj.interviewdog.model.entity.Question;
+import com.hjj.interviewdog.model.entity.QuestionBank;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 

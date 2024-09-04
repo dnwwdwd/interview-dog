@@ -1,7 +1,7 @@
-package com.yupi.mianshiya.mapper;
+package com.hjj.interviewdog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yupi.mianshiya.model.entity.User;
+import com.hjj.interviewdog.model.entity.User;
 
 /**
  * 用户数据库操作

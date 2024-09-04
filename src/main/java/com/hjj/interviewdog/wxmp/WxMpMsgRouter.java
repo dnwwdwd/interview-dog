@@ -1,8 +1,8 @@
-package com.yupi.mianshiya.wxmp;
+package com.hjj.interviewdog.wxmp;
 
-import com.yupi.mianshiya.wxmp.handler.EventHandler;
-import com.yupi.mianshiya.wxmp.handler.MessageHandler;
-import com.yupi.mianshiya.wxmp.handler.SubscribeHandler;
+import com.hjj.interviewdog.wxmp.handler.EventHandler;
+import com.hjj.interviewdog.wxmp.handler.MessageHandler;
+import com.hjj.interviewdog.wxmp.handler.SubscribeHandler;
 import javax.annotation.Resource;
 import me.chanjar.weixin.common.api.WxConsts.EventType;
 import me.chanjar.weixin.common.api.WxConsts.XmlMsgType;

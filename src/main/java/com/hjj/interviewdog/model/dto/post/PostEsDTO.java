@@ -1,8 +1,8 @@
-package com.yupi.mianshiya.model.dto.post;
+package com.hjj.interviewdog.model.dto.post;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.json.JSONUtil;
-import com.yupi.mianshiya.model.entity.Post;
+import com.hjj.interviewdog.model.entity.Post;
 import lombok.Data;
 
 import org.apache.commons.lang3.StringUtils;

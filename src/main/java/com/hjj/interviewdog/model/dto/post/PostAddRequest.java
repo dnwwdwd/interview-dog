@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.dto.post;
+package com.hjj.interviewdog.model.dto.post;
 
 import java.io.Serializable;
 import java.util.List;

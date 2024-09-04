@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.entity;
+package com.hjj.interviewdog.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 

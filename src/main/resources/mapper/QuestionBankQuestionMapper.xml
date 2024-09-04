@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yupi.mianshiya.mapper.QuestionBankQuestionMapper">
+<mapper namespace="com.hjj.interviewdog.mapper.QuestionBankQuestionMapper">
 
-    <resultMap id="BaseResultMap" type="com.yupi.mianshiya.model.entity.QuestionBankQuestion">
+    <resultMap id="BaseResultMap" type="com.hjj.interviewdog.model.entity.QuestionBankQuestion">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="questionBankId" column="questionBankId" jdbcType="BIGINT"/>
             <result property="questionId" column="questionId" jdbcType="BIGINT"/>

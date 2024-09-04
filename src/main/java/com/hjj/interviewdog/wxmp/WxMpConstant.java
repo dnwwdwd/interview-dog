@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.wxmp;
+package com.hjj.interviewdog.wxmp;
 
 /**
  * 微信公众号相关常量

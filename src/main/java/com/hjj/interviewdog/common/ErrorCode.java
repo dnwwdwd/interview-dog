@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.common;
+package com.hjj.interviewdog.common;
 
 /**
  * 自定义错误码

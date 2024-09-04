@@ -1,11 +1,11 @@
-package com.yupi.mianshiya.service;
+package com.hjj.interviewdog.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yupi.mianshiya.model.dto.user.UserQueryRequest;
-import com.yupi.mianshiya.model.entity.User;
-import com.yupi.mianshiya.model.vo.LoginUserVO;
-import com.yupi.mianshiya.model.vo.UserVO;
+import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
+import com.hjj.interviewdog.model.entity.User;
+import com.hjj.interviewdog.model.vo.LoginUserVO;
+import com.hjj.interviewdog.model.vo.UserVO;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;

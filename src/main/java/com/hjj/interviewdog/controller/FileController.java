@@ -1,16 +1,16 @@
-package com.yupi.mianshiya.controller;
+package com.hjj.interviewdog.controller;
 
 import cn.hutool.core.io.FileUtil;
-import com.yupi.mianshiya.common.BaseResponse;
-import com.yupi.mianshiya.common.ErrorCode;
-import com.yupi.mianshiya.common.ResultUtils;
-import com.yupi.mianshiya.constant.FileConstant;
-import com.yupi.mianshiya.exception.BusinessException;
-import com.yupi.mianshiya.manager.CosManager;
-import com.yupi.mianshiya.model.dto.file.UploadFileRequest;
-import com.yupi.mianshiya.model.entity.User;
-import com.yupi.mianshiya.model.enums.FileUploadBizEnum;
-import com.yupi.mianshiya.service.UserService;
+import com.hjj.interviewdog.common.BaseResponse;
+import com.hjj.interviewdog.common.ErrorCode;
+import com.hjj.interviewdog.common.ResultUtils;
+import com.hjj.interviewdog.constant.FileConstant;
+import com.hjj.interviewdog.exception.BusinessException;
+import com.hjj.interviewdog.manager.CosManager;
+import com.hjj.interviewdog.model.dto.file.UploadFileRequest;
+import com.hjj.interviewdog.model.entity.User;
+import com.hjj.interviewdog.model.enums.FileUploadBizEnum;
+import com.hjj.interviewdog.service.UserService;
 import java.io.File;
 import java.util.Arrays;
 import javax.annotation.Resource;

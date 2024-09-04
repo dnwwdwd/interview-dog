@@ -1,21 +1,21 @@
-package com.yupi.mianshiya.service.impl;
+package com.hjj.interviewdog.service.impl;
 
-import static com.yupi.mianshiya.constant.UserConstant.USER_LOGIN_STATE;
+import static com.hjj.interviewdog.constant.UserConstant.USER_LOGIN_STATE;
 
 import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yupi.mianshiya.common.ErrorCode;
-import com.yupi.mianshiya.constant.CommonConstant;
-import com.yupi.mianshiya.exception.BusinessException;
-import com.yupi.mianshiya.mapper.UserMapper;
-import com.yupi.mianshiya.model.dto.user.UserQueryRequest;
-import com.yupi.mianshiya.model.entity.User;
-import com.yupi.mianshiya.model.enums.UserRoleEnum;
-import com.yupi.mianshiya.model.vo.LoginUserVO;
-import com.yupi.mianshiya.model.vo.UserVO;
-import com.yupi.mianshiya.service.UserService;
-import com.yupi.mianshiya.utils.SqlUtils;
+import com.hjj.interviewdog.common.ErrorCode;
+import com.hjj.interviewdog.constant.CommonConstant;
+import com.hjj.interviewdog.exception.BusinessException;
+import com.hjj.interviewdog.mapper.UserMapper;
+import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
+import com.hjj.interviewdog.model.entity.User;
+import com.hjj.interviewdog.model.enums.UserRoleEnum;
+import com.hjj.interviewdog.model.vo.LoginUserVO;
+import com.hjj.interviewdog.model.vo.UserVO;
+import com.hjj.interviewdog.service.UserService;
+import com.hjj.interviewdog.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

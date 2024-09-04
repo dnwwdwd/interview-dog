@@ -1,7 +1,7 @@
-package com.yupi.mianshiya.mapper;
+package com.hjj.interviewdog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yupi.mianshiya.model.entity.Post;
+import com.hjj.interviewdog.model.entity.Post;
 import java.util.Date;
 import java.util.List;
 

@@ -1,12 +1,12 @@
-package com.yupi.mianshiya.service;
+package com.hjj.interviewdog.service;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yupi.mianshiya.model.entity.Post;
-import com.yupi.mianshiya.model.entity.PostFavour;
-import com.yupi.mianshiya.model.entity.User;
+import com.hjj.interviewdog.model.entity.Post;
+import com.hjj.interviewdog.model.entity.PostFavour;
+import com.hjj.interviewdog.model.entity.User;
 
 /**
  * 帖子收藏服务

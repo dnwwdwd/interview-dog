@@ -1,4 +1,4 @@
-package com.yupi.mianshiya.model.dto.file;
+package com.hjj.interviewdog.model.dto.file;
 
 import java.io.Serializable;
 import lombok.Data;

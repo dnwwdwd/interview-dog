@@ -1,6 +1,6 @@
-package com.yupi.mianshiya.model.vo;
+package com.hjj.interviewdog.model.vo;
 
-import com.yupi.mianshiya.model.entity.QuestionBankQuestion;
+import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 

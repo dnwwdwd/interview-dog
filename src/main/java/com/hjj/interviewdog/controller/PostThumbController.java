@@ -1,13 +1,13 @@
-package com.yupi.mianshiya.controller;
+package com.hjj.interviewdog.controller;
 
-import com.yupi.mianshiya.common.BaseResponse;
-import com.yupi.mianshiya.common.ErrorCode;
-import com.yupi.mianshiya.common.ResultUtils;
-import com.yupi.mianshiya.exception.BusinessException;
-import com.yupi.mianshiya.model.dto.postthumb.PostThumbAddRequest;
-import com.yupi.mianshiya.model.entity.User;
-import com.yupi.mianshiya.service.PostThumbService;
-import com.yupi.mianshiya.service.UserService;
+import com.hjj.interviewdog.common.BaseResponse;
+import com.hjj.interviewdog.common.ErrorCode;
+import com.hjj.interviewdog.common.ResultUtils;
+import com.hjj.interviewdog.exception.BusinessException;
+import com.hjj.interviewdog.model.dto.postthumb.PostThumbAddRequest;
+import com.hjj.interviewdog.model.entity.User;
+import com.hjj.interviewdog.service.PostThumbService;
+import com.hjj.interviewdog.service.UserService;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
