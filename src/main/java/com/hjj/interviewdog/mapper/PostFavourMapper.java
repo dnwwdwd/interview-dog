@@ -1,17 +1,16 @@
-package com.hjj.interviewdog.mapper;
+package com.yupi.mianshiya.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.hjj.interviewdog.model.entity.Post;
-import com.hjj.interviewdog.model.entity.PostFavour;
+import com.yupi.mianshiya.model.entity.Post;
+import com.yupi.mianshiya.model.entity.PostFavour;
 import org.apache.ibatis.annotations.Param;
 
 /**
  * 帖子收藏数据库操作
- *
 
  */
 public interface PostFavourMapper extends BaseMapper<PostFavour> {

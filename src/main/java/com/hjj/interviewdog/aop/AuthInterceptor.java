@@ -1,11 +1,11 @@
-package com.hjj.interviewdog.aop;
+package com.yupi.mianshiya.aop;
 
-import com.hjj.interviewdog.annotation.AuthCheck;
-import com.hjj.interviewdog.exception.BusinessException;
-import com.hjj.interviewdog.service.UserService;
-import com.hjj.interviewdog.common.ErrorCode;
-import com.hjj.interviewdog.model.entity.User;
-import com.hjj.interviewdog.model.enums.UserRoleEnum;
+import com.yupi.mianshiya.annotation.AuthCheck;
+import com.yupi.mianshiya.common.ErrorCode;
+import com.yupi.mianshiya.exception.BusinessException;
+import com.yupi.mianshiya.model.entity.User;
+import com.yupi.mianshiya.model.enums.UserRoleEnum;
+import com.yupi.mianshiya.service.UserService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -19,7 +19,6 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 权限校验 AOP
- *
 
  */
 @Aspect

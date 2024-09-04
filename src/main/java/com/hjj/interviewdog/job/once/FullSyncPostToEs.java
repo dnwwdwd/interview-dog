@@ -1,10 +1,9 @@
-package com.hjj.interviewdog.job.once;
+package com.yupi.mianshiya.job.once;
 
-import com.hjj.interviewdog.esdao.PostEsDao;
-import com.hjj.interviewdog.service.PostService;
-import com.hjj.interviewdog.model.dto.post.PostEsDTO;
-import com.hjj.interviewdog.model.entity.Post;
-
+import com.yupi.mianshiya.esdao.PostEsDao;
+import com.yupi.mianshiya.model.dto.post.PostEsDTO;
+import com.yupi.mianshiya.model.entity.Post;
+import com.yupi.mianshiya.service.PostService;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.annotation.Resource;
@@ -14,7 +13,6 @@ import org.springframework.boot.CommandLineRunner;
 
 /**
  * 全量同步帖子到 es
- *
 
  */
 // todo 取消注释开启任务

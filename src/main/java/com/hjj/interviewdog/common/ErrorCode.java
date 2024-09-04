@@ -1,8 +1,7 @@
-package com.hjj.interviewdog.common;
+package com.yupi.mianshiya.common;
 
 /**
  * 自定义错误码
- *
 
  */
 public enum ErrorCode {

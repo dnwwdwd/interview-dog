@@ -1,8 +1,7 @@
-package com.hjj.interviewdog.constant;
+package com.yupi.mianshiya.constant;
 
 /**
  * 用户常量
- *
 
  */
 public interface UserConstant {

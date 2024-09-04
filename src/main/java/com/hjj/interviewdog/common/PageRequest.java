@@ -1,11 +1,10 @@
-package com.hjj.interviewdog.common;
+package com.yupi.mianshiya.common;
 
-import com.hjj.interviewdog.constant.CommonConstant;
+import com.yupi.mianshiya.constant.CommonConstant;
 import lombok.Data;
 
 /**
  * 分页请求
- *
 
  */
 @Data

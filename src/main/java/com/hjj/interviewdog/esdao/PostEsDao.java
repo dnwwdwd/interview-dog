@@ -1,12 +1,11 @@
-package com.hjj.interviewdog.esdao;
+package com.yupi.mianshiya.esdao;
 
-import com.hjj.interviewdog.model.dto.post.PostEsDTO;
+import com.yupi.mianshiya.model.dto.post.PostEsDTO;
 import java.util.List;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
  * 帖子 ES 操作
- *
 
  */
 public interface PostEsDao extends ElasticsearchRepository<PostEsDTO, Long> {

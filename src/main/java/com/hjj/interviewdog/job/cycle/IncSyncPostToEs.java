@@ -1,9 +1,9 @@
-package com.hjj.interviewdog.job.cycle;
+package com.yupi.mianshiya.job.cycle;
 
-import com.hjj.interviewdog.esdao.PostEsDao;
-import com.hjj.interviewdog.mapper.PostMapper;
-import com.hjj.interviewdog.model.dto.post.PostEsDTO;
-import com.hjj.interviewdog.model.entity.Post;
+import com.yupi.mianshiya.esdao.PostEsDao;
+import com.yupi.mianshiya.mapper.PostMapper;
+import com.yupi.mianshiya.model.dto.post.PostEsDTO;
+import com.yupi.mianshiya.model.entity.Post;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,7 +14,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 /**
  * 增量同步帖子到 es
- *
 
  */
 // todo 取消注释开启任务

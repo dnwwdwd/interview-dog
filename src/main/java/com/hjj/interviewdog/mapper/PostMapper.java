@@ -1,13 +1,12 @@
-package com.hjj.interviewdog.mapper;
+package com.yupi.mianshiya.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.hjj.interviewdog.model.entity.Post;
+import com.yupi.mianshiya.model.entity.Post;
 import java.util.Date;
 import java.util.List;
 
 /**
  * 帖子数据库操作
- *
 
  */
 public interface PostMapper extends BaseMapper<Post> {

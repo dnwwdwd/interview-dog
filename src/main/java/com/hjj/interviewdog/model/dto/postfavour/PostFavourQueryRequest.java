@@ -1,14 +1,13 @@
-package com.hjj.interviewdog.model.dto.postfavour;
+package com.yupi.mianshiya.model.dto.postfavour;
 
-import com.hjj.interviewdog.common.PageRequest;
-import com.hjj.interviewdog.model.dto.post.PostQueryRequest;
+import com.yupi.mianshiya.common.PageRequest;
+import com.yupi.mianshiya.model.dto.post.PostQueryRequest;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
  * 帖子收藏查询请求
- *
 
  */
 @Data

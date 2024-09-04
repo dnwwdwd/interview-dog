@@ -1,25 +1,25 @@
-package com.hjj.interviewdog.controller;
+package com.yupi.mianshiya.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.hjj.interviewdog.constant.UserConstant;
-import com.hjj.interviewdog.exception.BusinessException;
-import com.hjj.interviewdog.annotation.AuthCheck;
-import com.hjj.interviewdog.common.BaseResponse;
-import com.hjj.interviewdog.common.DeleteRequest;
-import com.hjj.interviewdog.common.ErrorCode;
-import com.hjj.interviewdog.common.ResultUtils;
-import com.hjj.interviewdog.config.WxOpenConfig;
-import com.hjj.interviewdog.exception.ThrowUtils;
-import com.hjj.interviewdog.model.dto.user.UserAddRequest;
-import com.hjj.interviewdog.model.dto.user.UserLoginRequest;
-import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
-import com.hjj.interviewdog.model.dto.user.UserRegisterRequest;
-import com.hjj.interviewdog.model.dto.user.UserUpdateMyRequest;
-import com.hjj.interviewdog.model.dto.user.UserUpdateRequest;
-import com.hjj.interviewdog.model.entity.User;
-import com.hjj.interviewdog.model.vo.LoginUserVO;
-import com.hjj.interviewdog.model.vo.UserVO;
-import com.hjj.interviewdog.service.UserService;
+import com.yupi.mianshiya.annotation.AuthCheck;
+import com.yupi.mianshiya.common.BaseResponse;
+import com.yupi.mianshiya.common.DeleteRequest;
+import com.yupi.mianshiya.common.ErrorCode;
+import com.yupi.mianshiya.common.ResultUtils;
+import com.yupi.mianshiya.config.WxOpenConfig;
+import com.yupi.mianshiya.constant.UserConstant;
+import com.yupi.mianshiya.exception.BusinessException;
+import com.yupi.mianshiya.exception.ThrowUtils;
+import com.yupi.mianshiya.model.dto.user.UserAddRequest;
+import com.yupi.mianshiya.model.dto.user.UserLoginRequest;
+import com.yupi.mianshiya.model.dto.user.UserQueryRequest;
+import com.yupi.mianshiya.model.dto.user.UserRegisterRequest;
+import com.yupi.mianshiya.model.dto.user.UserUpdateMyRequest;
+import com.yupi.mianshiya.model.dto.user.UserUpdateRequest;
+import com.yupi.mianshiya.model.entity.User;
+import com.yupi.mianshiya.model.vo.LoginUserVO;
+import com.yupi.mianshiya.model.vo.UserVO;
+import com.yupi.mianshiya.service.UserService;
 
 import java.util.List;
 import javax.annotation.Resource;
@@ -40,11 +40,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.hjj.interviewdog.service.impl.UserServiceImpl.SALT;
+import static com.yupi.mianshiya.service.impl.UserServiceImpl.SALT;
 
 /**
  * 用户接口
- *
 
  */
 @RestController

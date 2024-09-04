@@ -1,11 +1,10 @@
-package com.hjj.interviewdog.common;
+package com.yupi.mianshiya.common;
 
 import java.io.Serializable;
 import lombok.Data;
 
 /**
  * 删除请求
- *
 
  */
 @Data

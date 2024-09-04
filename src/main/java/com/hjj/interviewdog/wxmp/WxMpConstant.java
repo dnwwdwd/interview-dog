@@ -1,8 +1,8 @@
-package com.hjj.interviewdog.wxmp;
+package com.yupi.mianshiya.wxmp;
 
 /**
  * 微信公众号相关常量
- *
+
  **/
 public class WxMpConstant {
 

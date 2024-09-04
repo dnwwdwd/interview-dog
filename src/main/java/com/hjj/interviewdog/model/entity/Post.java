@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.model.entity;
+package com.yupi.mianshiya.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -11,7 +11,6 @@ import lombok.Data;
 
 /**
  * 帖子
- *
 
  */
 @TableName(value = "post")

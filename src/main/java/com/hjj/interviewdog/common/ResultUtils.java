@@ -1,8 +1,7 @@
-package com.hjj.interviewdog.common;
+package com.yupi.mianshiya.common;
 
 /**
  * 返回工具类
- *
 
  */
 public class ResultUtils {

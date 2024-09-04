@@ -1,26 +1,26 @@
-package com.hjj.interviewdog.service.impl;
+package com.yupi.mianshiya.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hjj.interviewdog.exception.BusinessException;
-import com.hjj.interviewdog.common.ErrorCode;
-import com.hjj.interviewdog.constant.CommonConstant;
-import com.hjj.interviewdog.exception.ThrowUtils;
-import com.hjj.interviewdog.mapper.PostFavourMapper;
-import com.hjj.interviewdog.mapper.PostMapper;
-import com.hjj.interviewdog.mapper.PostThumbMapper;
-import com.hjj.interviewdog.model.dto.post.PostEsDTO;
-import com.hjj.interviewdog.model.dto.post.PostQueryRequest;
-import com.hjj.interviewdog.model.entity.Post;
-import com.hjj.interviewdog.model.entity.PostFavour;
-import com.hjj.interviewdog.model.entity.PostThumb;
-import com.hjj.interviewdog.model.entity.User;
-import com.hjj.interviewdog.model.vo.PostVO;
-import com.hjj.interviewdog.model.vo.UserVO;
-import com.hjj.interviewdog.service.PostService;
-import com.hjj.interviewdog.service.UserService;
-import com.hjj.interviewdog.utils.SqlUtils;
+import com.yupi.mianshiya.common.ErrorCode;
+import com.yupi.mianshiya.constant.CommonConstant;
+import com.yupi.mianshiya.exception.BusinessException;
+import com.yupi.mianshiya.exception.ThrowUtils;
+import com.yupi.mianshiya.mapper.PostFavourMapper;
+import com.yupi.mianshiya.mapper.PostMapper;
+import com.yupi.mianshiya.mapper.PostThumbMapper;
+import com.yupi.mianshiya.model.dto.post.PostEsDTO;
+import com.yupi.mianshiya.model.dto.post.PostQueryRequest;
+import com.yupi.mianshiya.model.entity.Post;
+import com.yupi.mianshiya.model.entity.PostFavour;
+import com.yupi.mianshiya.model.entity.PostThumb;
+import com.yupi.mianshiya.model.entity.User;
+import com.yupi.mianshiya.model.vo.PostVO;
+import com.yupi.mianshiya.model.vo.UserVO;
+import com.yupi.mianshiya.service.PostService;
+import com.yupi.mianshiya.service.UserService;
+import com.yupi.mianshiya.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -48,7 +48,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * 帖子服务实现
- *
+
  */
 @Service
 @Slf4j

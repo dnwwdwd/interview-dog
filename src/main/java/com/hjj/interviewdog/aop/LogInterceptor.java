@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.aop;
+package com.yupi.mianshiya.aop;
 
 import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +15,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
  * 请求响应日志 AOP
- *
 
  **/
 @Aspect
@@ -26,7 +25,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.yupi.springbootinit.controller.*.*(..))")
+    @Around("execution(* com.yupi.mianshiya.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();

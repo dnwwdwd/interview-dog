@@ -1,11 +1,10 @@
-package com.hjj.interviewdog.model.dto.postthumb;
+package com.yupi.mianshiya.model.dto.postthumb;
 
 import java.io.Serializable;
 import lombok.Data;
 
 /**
  * 帖子点赞请求
- *
 
  */
 @Data

@@ -1,14 +1,12 @@
-package com.hjj.interviewdog.model.dto.user;
+package com.yupi.mianshiya.model.dto.user;
 
-import com.hjj.interviewdog.common.PageRequest;
-
+import com.yupi.mianshiya.common.PageRequest;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
  * 用户查询请求
- *
 
  */
 @EqualsAndHashCode(callSuper = true)

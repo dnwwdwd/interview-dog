@@ -1,10 +1,9 @@
-package com.hjj.interviewdog.exception;
+package com.yupi.mianshiya.exception;
 
-import com.hjj.interviewdog.common.ErrorCode;
+import com.yupi.mianshiya.common.ErrorCode;
 
 /**
  * 抛异常工具类
- *
 
  */
 public class ThrowUtils {

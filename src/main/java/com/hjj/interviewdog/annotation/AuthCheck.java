@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.annotation;
+package com.yupi.mianshiya.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,6 @@ import java.lang.annotation.Target;
 
 /**
  * 权限校验
- *
 
  */
 @Target(ElementType.METHOD)

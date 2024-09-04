@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.utils;
+package com.yupi.mianshiya.utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeansException;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Spring 上下文获取工具
- *
+
  */
 @Component
 public class SpringContextUtils implements ApplicationContextAware {

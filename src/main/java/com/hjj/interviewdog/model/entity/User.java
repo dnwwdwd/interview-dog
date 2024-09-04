@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.model.entity;
+package com.yupi.mianshiya.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -11,7 +11,6 @@ import lombok.Data;
 
 /**
  * 用户
- *
 
  */
 @TableName(value = "user")
@@ -63,6 +62,11 @@ public class User implements Serializable {
      * 用户角色：user/admin/ban
      */
     private String userRole;
+
+    /**
+     * 编辑时间
+     */
+    private Date editTime;
 
     /**
      * 创建时间

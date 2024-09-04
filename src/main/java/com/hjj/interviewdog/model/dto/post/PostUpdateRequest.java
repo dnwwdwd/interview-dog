@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.model.dto.post;
+package com.yupi.mianshiya.model.dto.post;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,7 +6,6 @@ import lombok.Data;
 
 /**
  * 更新请求
- *
 
  */
 @Data

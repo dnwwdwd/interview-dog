@@ -1,8 +1,8 @@
-package com.hjj.interviewdog.model.dto.post;
+package com.yupi.mianshiya.model.dto.post;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.json.JSONUtil;
-import com.hjj.interviewdog.model.entity.Post;
+import com.yupi.mianshiya.model.entity.Post;
 import lombok.Data;
 
 import org.apache.commons.lang3.StringUtils;
@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * 帖子 ES 包装类
- *
 
  **/
 // todo 取消注释开启 ES（须先配置 ES）

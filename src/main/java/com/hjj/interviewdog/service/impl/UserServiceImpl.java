@@ -1,20 +1,21 @@
-package com.hjj.interviewdog.service.impl;
+package com.yupi.mianshiya.service.impl;
+
+import static com.yupi.mianshiya.constant.UserConstant.USER_LOGIN_STATE;
 
 import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hjj.interviewdog.constant.CommonConstant;
-import com.hjj.interviewdog.constant.UserConstant;
-import com.hjj.interviewdog.exception.BusinessException;
-import com.hjj.interviewdog.service.UserService;
-import com.hjj.interviewdog.common.ErrorCode;
-import com.hjj.interviewdog.mapper.UserMapper;
-import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
-import com.hjj.interviewdog.model.entity.User;
-import com.hjj.interviewdog.model.enums.UserRoleEnum;
-import com.hjj.interviewdog.model.vo.LoginUserVO;
-import com.hjj.interviewdog.model.vo.UserVO;
-import com.hjj.interviewdog.utils.SqlUtils;
+import com.yupi.mianshiya.common.ErrorCode;
+import com.yupi.mianshiya.constant.CommonConstant;
+import com.yupi.mianshiya.exception.BusinessException;
+import com.yupi.mianshiya.mapper.UserMapper;
+import com.yupi.mianshiya.model.dto.user.UserQueryRequest;
+import com.yupi.mianshiya.model.entity.User;
+import com.yupi.mianshiya.model.enums.UserRoleEnum;
+import com.yupi.mianshiya.model.vo.LoginUserVO;
+import com.yupi.mianshiya.model.vo.UserVO;
+import com.yupi.mianshiya.service.UserService;
+import com.yupi.mianshiya.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -28,7 +29,7 @@ import org.springframework.util.DigestUtils;
 
 /**
  * 用户服务实现
- *
+
  */
 @Service
 @Slf4j
@@ -102,7 +103,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户不存在或密码错误");
         }
         // 3. 记录用户的登录态
-        request.getSession().setAttribute(UserConstant.USER_LOGIN_STATE, user);
+        request.getSession().setAttribute(USER_LOGIN_STATE, user);
         return this.getLoginUserVO(user);
     }
 
@@ -133,7 +134,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
                 }
             }
             // 记录用户的登录态
-            request.getSession().setAttribute(UserConstant.USER_LOGIN_STATE, user);
+            request.getSession().setAttribute(USER_LOGIN_STATE, user);
             return getLoginUserVO(user);
         }
     }
@@ -147,7 +148,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public User getLoginUser(HttpServletRequest request) {
         // 先判断是否已登录
-        Object userObj = request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE);
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
         User currentUser = (User) userObj;
         if (currentUser == null || currentUser.getId() == null) {
             throw new BusinessException(ErrorCode.NOT_LOGIN_ERROR);
@@ -170,7 +171,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public User getLoginUserPermitNull(HttpServletRequest request) {
         // 先判断是否已登录
-        Object userObj = request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE);
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
         User currentUser = (User) userObj;
         if (currentUser == null || currentUser.getId() == null) {
             return null;
@@ -189,7 +190,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public boolean isAdmin(HttpServletRequest request) {
         // 仅管理员可查询
-        Object userObj = request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE);
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
         User user = (User) userObj;
         return isAdmin(user);
     }
@@ -206,11 +207,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     @Override
     public boolean userLogout(HttpServletRequest request) {
-        if (request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE) == null) {
+        if (request.getSession().getAttribute(USER_LOGIN_STATE) == null) {
             throw new BusinessException(ErrorCode.OPERATION_ERROR, "未登录");
         }
         // 移除登录态
-        request.getSession().removeAttribute(UserConstant.USER_LOGIN_STATE);
+        request.getSession().removeAttribute(USER_LOGIN_STATE);
         return true;
     }
 

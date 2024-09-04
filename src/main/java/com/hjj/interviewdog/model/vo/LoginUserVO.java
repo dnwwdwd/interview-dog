@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.model.vo;
+package com.yupi.mianshiya.model.vo;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -6,7 +6,6 @@ import lombok.Data;
 
 /**
  * 已登录用户视图（脱敏）
- *
 
  **/
 @Data

@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.config;
+package com.yupi.mianshiya.config;
 
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.ClientConfig;
@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 腾讯云对象存储客户端
- *
 
  */
 @Configuration

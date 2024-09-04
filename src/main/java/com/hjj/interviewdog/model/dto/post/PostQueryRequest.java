@@ -1,7 +1,6 @@
-package com.hjj.interviewdog.model.dto.post;
+package com.yupi.mianshiya.model.dto.post;
 
-import com.hjj.interviewdog.common.PageRequest;
-
+import com.yupi.mianshiya.common.PageRequest;
 import java.io.Serializable;
 import java.util.List;
 import lombok.Data;
@@ -9,7 +8,6 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 查询请求
- *
 
  */
 @EqualsAndHashCode(callSuper = true)

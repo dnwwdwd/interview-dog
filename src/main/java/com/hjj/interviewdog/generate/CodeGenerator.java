@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.generate;
+package com.yupi.mianshiya.generate;
 
 import cn.hutool.core.io.FileUtil;
 import freemarker.template.Configuration;
@@ -29,7 +29,7 @@ public class CodeGenerator {
      */
     public static void main(String[] args) throws TemplateException, IOException {
         // 指定生成参数
-        String packageName = "com.yupi.springbootinit";
+        String packageName = "com.yupi.mianshiya";
         String dataName = "用户评论";
         String dataKey = "userComment";
         String upperDataKey = "UserComment";

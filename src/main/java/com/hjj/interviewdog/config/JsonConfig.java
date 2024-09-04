@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.config;
+package com.yupi.mianshiya.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
@@ -9,7 +9,6 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 /**
  * Spring MVC Json 配置
- *
 
  */
 @JsonComponent

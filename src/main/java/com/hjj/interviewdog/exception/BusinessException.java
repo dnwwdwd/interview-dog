@@ -1,10 +1,9 @@
-package com.hjj.interviewdog.exception;
+package com.yupi.mianshiya.exception;
 
-import com.hjj.interviewdog.common.ErrorCode;
+import com.yupi.mianshiya.common.ErrorCode;
 
 /**
  * 自定义异常类
- *
 
  */
 public class BusinessException extends RuntimeException {

@@ -1,11 +1,10 @@
-package com.hjj.interviewdog.model.dto.user;
+package com.yupi.mianshiya.model.dto.user;
 
 import java.io.Serializable;
 import lombok.Data;
 
 /**
  * 用户更新个人信息请求
- *
 
  */
 @Data

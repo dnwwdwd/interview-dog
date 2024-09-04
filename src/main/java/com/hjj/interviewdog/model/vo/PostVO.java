@@ -1,7 +1,7 @@
-package com.hjj.interviewdog.model.vo;
+package com.yupi.mianshiya.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.hjj.interviewdog.model.entity.Post;
+import com.yupi.mianshiya.model.entity.Post;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -10,7 +10,6 @@ import org.springframework.beans.BeanUtils;
 
 /**
  * 帖子视图
- *
 
  */
 @Data

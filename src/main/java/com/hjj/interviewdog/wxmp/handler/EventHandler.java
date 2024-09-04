@@ -1,4 +1,4 @@
-package com.hjj.interviewdog.wxmp.handler;
+package com.yupi.mianshiya.wxmp.handler;
 
 import java.util.Map;
 import me.chanjar.weixin.common.error.WxErrorException;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 事件处理器
- *
+
  **/
 @Component
 public class EventHandler implements WxMpMessageHandler {

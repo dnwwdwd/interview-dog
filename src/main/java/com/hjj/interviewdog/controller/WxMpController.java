@@ -1,6 +1,6 @@
-package com.hjj.interviewdog.controller;
+package com.yupi.mianshiya.controller;
 
-import com.hjj.interviewdog.wxmp.WxMpConstant;
+import com.yupi.mianshiya.wxmp.WxMpConstant;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 微信公众号相关接口
- *
 
  **/
 @RestController

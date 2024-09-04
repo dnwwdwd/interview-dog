@@ -1,8 +1,7 @@
-package com.hjj.interviewdog.constant;
+package com.yupi.mianshiya.constant;
 
 /**
  * 通用常量
- *
 
  */
 public interface CommonConstant {

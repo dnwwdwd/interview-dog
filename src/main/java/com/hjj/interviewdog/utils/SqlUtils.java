@@ -1,10 +1,10 @@
-package com.hjj.interviewdog.utils;
+package com.yupi.mianshiya.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * SQL 工具
- *
+
  */
 public class SqlUtils {
 

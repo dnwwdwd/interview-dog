@@ -1,17 +1,15 @@
-package com.hjj.interviewdog.manager;
+package com.yupi.mianshiya.manager;
 
-import com.hjj.interviewdog.config.CosClientConfig;
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.model.PutObjectResult;
-
+import com.yupi.mianshiya.config.CosClientConfig;
 import java.io.File;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 /**
  * Cos 对象存储操作
- *
 
  */
 @Component
