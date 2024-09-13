@@ -6,7 +6,10 @@ import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.LoginUserVO;
 import com.hjj.interviewdog.model.vo.UserVO;
+
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 
@@ -116,4 +119,13 @@ public interface UserService extends IService<User> {
      */
     QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest);
 
+    /**
+     * 用户签到
+     */
+    boolean addUserSignIn(HttpServletRequest request);
+
+    /**
+     * 获取用户某年份的签到记录
+     */
+    List<Integer> getUserSignInRecord(long userId, Integer year);
 }

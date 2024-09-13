@@ -21,11 +21,14 @@ import com.hjj.interviewdog.model.vo.LoginUserVO;
 import com.hjj.interviewdog.model.vo.UserVO;
 import com.hjj.interviewdog.service.UserService;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.hjj.interviewdog.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 import me.chanjar.weixin.common.bean.oauth2.WxOAuth2AccessToken;
@@ -315,4 +318,18 @@ public class UserController {
         ThrowUtils.throwIf(!result, ErrorCode.OPERATION_ERROR);
         return ResultUtils.success(true);
     }
+
+    @PostMapping("/sign/in")
+    public BaseResponse<Boolean> addUserSignIn(HttpServletRequest request) {
+        boolean b = userService.addUserSignIn(request);
+        return ResultUtils.success(b);
+    }
+
+    @GetMapping("/get/sign/in")
+    public BaseResponse<List<Integer>> getUserSignInRecord(Integer year, HttpServletRequest request) {
+        User loginUser = userService.getLoginUser(request);
+        List<Integer> signInRecord = userService.getUserSignInRecord(loginUser.getId(), year);
+        return ResultUtils.success(signInRecord);
+    }
+
 }
