@@ -14,9 +14,11 @@ import com.hjj.interviewdog.model.dto.question.QuestionAddRequest;
 import com.hjj.interviewdog.model.dto.question.QuestionEditRequest;
 import com.hjj.interviewdog.model.dto.question.QuestionQueryRequest;
 import com.hjj.interviewdog.model.dto.question.QuestionUpdateRequest;
+import com.hjj.interviewdog.model.dto.questionBankQuestion.QuestionBankQuestionBatchAddRequest;
 import com.hjj.interviewdog.model.entity.Question;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.QuestionVO;
+import com.hjj.interviewdog.service.QuestionBankQuestionService;
 import com.hjj.interviewdog.service.QuestionService;
 import com.hjj.interviewdog.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -43,6 +45,9 @@ public class QuestionController {
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private QuestionBankQuestionService questionBankQuestionService;
 
     // region 增删改查
 
@@ -249,5 +254,34 @@ public class QuestionController {
         return ResultUtils.success(true);
     }
 
-    // endregion
+    @PostMapping("/search/page/vo")
+    public BaseResponse<Page<QuestionVO>> searchQuestionVOByPage(@RequestBody QuestionQueryRequest questionQueryRequest,
+                                                                 HttpServletRequest request) {
+        long size = questionQueryRequest.getPageSize();
+        // 限制爬虫
+        ThrowUtils.throwIf(size > 200, ErrorCode.PARAMS_ERROR);
+        Page<Question> questionPage = questionService.searchFromEs(questionQueryRequest);
+        return ResultUtils.success(questionService.getQuestionVOPage(questionPage, request));
+    }
+
+
+    @PostMapping("/add/batch")
+    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
+    public BaseResponse<Boolean> batchAddQuestionsToBank(
+            @RequestBody QuestionBankQuestionBatchAddRequest questionBankQuestionBatchAddRequest,
+            HttpServletRequest request
+    ) {
+        // 参数校验
+        ThrowUtils.throwIf(questionBankQuestionBatchAddRequest == null, ErrorCode.PARAMS_ERROR);
+        User loginUser = userService.getLoginUser(request);
+        Long questionBankId = questionBankQuestionBatchAddRequest.getQuestionBankId();
+        List<Long> questionIdList = questionBankQuestionBatchAddRequest.getQuestionIdList();
+        questionBankQuestionService.batchAddQuestionsToBank(questionIdList, questionBankId, loginUser);
+        return ResultUtils.success(true);
+    }
+
+
+
+    //endregion
+
 }

@@ -6,20 +6,26 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hjj.interviewdog.common.ErrorCode;
 import com.hjj.interviewdog.constant.CommonConstant;
+import com.hjj.interviewdog.exception.BusinessException;
 import com.hjj.interviewdog.exception.ThrowUtils;
 import com.hjj.interviewdog.mapper.QuestionBankMapper;
 import com.hjj.interviewdog.model.dto.questionBank.QuestionBankQueryRequest;
+import com.hjj.interviewdog.model.entity.Question;
 import com.hjj.interviewdog.model.entity.QuestionBank;
+import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.QuestionBankVO;
 import com.hjj.interviewdog.model.vo.UserVO;
 import com.hjj.interviewdog.service.QuestionBankService;
+import com.hjj.interviewdog.service.QuestionService;
 import com.hjj.interviewdog.service.UserService;
 import com.hjj.interviewdog.utils.SqlUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +46,9 @@ public class QuestionBankServiceImpl extends ServiceImpl<QuestionBankMapper, Que
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private QuestionService questionService;
 
     /**
      * 校验数据
@@ -174,5 +183,7 @@ public class QuestionBankServiceImpl extends ServiceImpl<QuestionBankMapper, Que
         questionBankVOPage.setRecords(questionBankVOList);
         return questionBankVOPage;
     }
+
+
 
 }

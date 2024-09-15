@@ -120,6 +120,11 @@
             <artifactId>redisson</artifactId>
             <version>3.17.5</version>
         </dependency>
+        <!-- elasticsearch-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
