@@ -7,6 +7,7 @@ import com.hjj.interviewdog.model.dto.questionBankQuestion.QuestionBankQuestionQ
 import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.QuestionBankQuestionVO;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -62,5 +63,12 @@ public interface QuestionBankQuestionService extends IService<QuestionBankQuesti
     void batchAddQuestionsToBank(List<Long> questionIdList, Long questionBankId, User loginUser);
 
     void batchRemoveQuestionsFromBank(List<Long> questionIdList, Long questionBankId);
+
+    /**
+     * 对某一批操作进行失误管理，并添加题目到题库
+     * @param questionBankQuestions
+     */
+    @Transactional(rollbackFor = Exception.class)
+    void batchAddQuestionsToBankInner(List<QuestionBankQuestion> questionBankQuestions);
 
 }
