@@ -150,14 +150,14 @@ public class QuestionBankController {
         Long id = questionBankQueryRequest.getId();
         ThrowUtils.throwIf(id <= 0, ErrorCode.PARAMS_ERROR);
         // 生成 key
-        String key = "bank_detail_" + id;
-        if (JdHotKeyStore.isHotKey(key)) {
-            Object cachedQuestionBankVO = JdHotKeyStore.get(key);
-            if (cachedQuestionBankVO != null) {
-                // 如果缓存中有值，直接返回缓存的值
-                return ResultUtils.success((QuestionBankVO) cachedQuestionBankVO);
-            }
-        }
+//        String key = "bank_detail_" + id;
+//        if (JdHotKeyStore.isHotKey(key)) {
+//            Object cachedQuestionBankVO = JdHotKeyStore.get(key);
+//            if (cachedQuestionBankVO != null) {
+//                // 如果缓存中有值，直接返回缓存的值
+//                return ResultUtils.success((QuestionBankVO) cachedQuestionBankVO);
+//            }
+//        }
         // 查询数据库
         QuestionBank questionBank = questionBankService.getById(id);
         ThrowUtils.throwIf(questionBank == null, ErrorCode.NOT_FOUND_ERROR);
@@ -176,7 +176,7 @@ public class QuestionBankController {
             questionBankVO.setQuestionPage(questionVOPage);
         }
         // 设置本地缓存（只有是热 key 才会设置缓存）
-        JdHotKeyStore.smartSet(key, questionBankVO);
+//        JdHotKeyStore.smartSet(key, questionBankVO);
         // 获取封装类
         return ResultUtils.success(questionBankVO);
     }
