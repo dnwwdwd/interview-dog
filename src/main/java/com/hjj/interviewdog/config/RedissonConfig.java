@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties(prefix = "spring.redis")
+@ConfigurationProperties("spring.redis")
 @Data
 public class RedissonConfig {
 
@@ -24,7 +24,7 @@ public class RedissonConfig {
         // 1. 创建配置
         Config config = new Config();
         String redisAddress = String.format("redis://%s:%s", host, port);
-        config.useSingleServer().setAddress(redisAddress).setDatabase(7).setPassword(password);//设置单个服务器，设置地址，选择数据库
+        config.useSingleServer().setAddress(redisAddress).setDatabase(0).setPassword(password);//设置单个服务器，设置地址，选择数据库
         // 2. 创建实例
         RedissonClient redisson = Redisson.create(config);
         return redisson;

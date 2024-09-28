@@ -38,8 +38,7 @@ import java.util.List;
 /**
  * 题目接口
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @RestController
 @RequestMapping("/question")
@@ -310,12 +309,18 @@ public class QuestionController {
     }
 
     @PostMapping("/search/page/vo")
-    public BaseResponse<Page<QuestionVO>> searchQuestionVOByPage(@RequestBody QuestionQueryRequest questionQueryRequest,
+    public BaseResponse<Page<QuestionVO>> searchQuestionVOByPageFromEs(@RequestBody QuestionQueryRequest questionQueryRequest,
                                                                  HttpServletRequest request) {
         long size = questionQueryRequest.getPageSize();
         // 限制爬虫
         ThrowUtils.throwIf(size > 200, ErrorCode.PARAMS_ERROR);
-        Page<Question> questionPage = questionService.searchFromEs(questionQueryRequest);
+        Page<Question> questionPage = null;
+        try {
+            questionPage = questionService.searchFromEs(questionQueryRequest);
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            questionPage = questionService.listQuestionByPage(questionQueryRequest);
+        }
         return ResultUtils.success(questionService.getQuestionVOPage(questionPage, request));
     }
 

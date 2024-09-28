@@ -1,7 +1,7 @@
 package com.hjj.interviewdog.mapper;
 
-import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 
 /**
 * @author 李鱼皮

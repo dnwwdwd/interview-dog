@@ -6,42 +6,23 @@ import com.hjj.interviewdog.common.BaseResponse;
 import com.hjj.interviewdog.common.DeleteRequest;
 import com.hjj.interviewdog.common.ErrorCode;
 import com.hjj.interviewdog.common.ResultUtils;
-import com.hjj.interviewdog.config.WxOpenConfig;
 import com.hjj.interviewdog.constant.UserConstant;
 import com.hjj.interviewdog.exception.BusinessException;
 import com.hjj.interviewdog.exception.ThrowUtils;
-import com.hjj.interviewdog.model.dto.user.UserAddRequest;
-import com.hjj.interviewdog.model.dto.user.UserLoginRequest;
-import com.hjj.interviewdog.model.dto.user.UserQueryRequest;
-import com.hjj.interviewdog.model.dto.user.UserRegisterRequest;
-import com.hjj.interviewdog.model.dto.user.UserUpdateMyRequest;
-import com.hjj.interviewdog.model.dto.user.UserUpdateRequest;
+import com.hjj.interviewdog.model.dto.user.*;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.LoginUserVO;
 import com.hjj.interviewdog.model.vo.UserVO;
 import com.hjj.interviewdog.service.UserService;
-
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Map;
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.hjj.interviewdog.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
-import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
-import me.chanjar.weixin.common.bean.oauth2.WxOAuth2AccessToken;
-import me.chanjar.weixin.mp.api.WxMpService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 import static com.hjj.interviewdog.service.impl.UserServiceImpl.SALT;
 
@@ -56,9 +37,6 @@ public class UserController {
 
     @Resource
     private UserService userService;
-
-    @Resource
-    private WxOpenConfig wxOpenConfig;
 
     // region 登录相关
 
@@ -102,29 +80,6 @@ public class UserController {
         }
         LoginUserVO loginUserVO = userService.userLogin(userAccount, userPassword, request);
         return ResultUtils.success(loginUserVO);
-    }
-
-    /**
-     * 用户登录（微信开放平台）
-     */
-    @GetMapping("/login/wx_open")
-    public BaseResponse<LoginUserVO> userLoginByWxOpen(HttpServletRequest request, HttpServletResponse response,
-            @RequestParam("code") String code) {
-        WxOAuth2AccessToken accessToken;
-        try {
-            WxMpService wxService = wxOpenConfig.getWxMpService();
-            accessToken = wxService.getOAuth2Service().getAccessToken(code);
-            WxOAuth2UserInfo userInfo = wxService.getOAuth2Service().getUserInfo(accessToken, code);
-            String unionId = userInfo.getUnionId();
-            String mpOpenId = userInfo.getOpenid();
-            if (StringUtils.isAnyBlank(unionId, mpOpenId)) {
-                throw new BusinessException(ErrorCode.SYSTEM_ERROR, "登录失败，系统错误");
-            }
-            return ResultUtils.success(userService.userLoginByMpOpen(userInfo, request));
-        } catch (Exception e) {
-            log.error("userLoginByWxOpen error", e);
-            throw new BusinessException(ErrorCode.SYSTEM_ERROR, "登录失败，系统错误");
-        }
     }
 
     /**

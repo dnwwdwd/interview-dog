@@ -26,7 +26,6 @@ import com.hjj.interviewdog.model.vo.QuestionVO;
 import com.hjj.interviewdog.service.QuestionBankService;
 import com.hjj.interviewdog.service.QuestionService;
 import com.hjj.interviewdog.service.UserService;
-import com.jd.platform.hotkey.client.callback.JdHotKeyStore;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
@@ -37,8 +36,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 题库接口
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @RestController
 @RequestMapping("/questionBank")

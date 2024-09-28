@@ -14,7 +14,6 @@ import com.hjj.interviewdog.mapper.QuestionMapper;
 import com.hjj.interviewdog.model.dto.question.QuestionEsDTO;
 import com.hjj.interviewdog.model.dto.question.QuestionQueryRequest;
 import com.hjj.interviewdog.model.entity.Question;
-import com.hjj.interviewdog.model.entity.QuestionBank;
 import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.QuestionVO;
@@ -51,8 +50,7 @@ import java.util.stream.Collectors;
 /**
  * 题目服务实现
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @Service
 @Slf4j

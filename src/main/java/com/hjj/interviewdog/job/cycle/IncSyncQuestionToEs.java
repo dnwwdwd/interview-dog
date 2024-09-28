@@ -7,14 +7,13 @@ import com.hjj.interviewdog.model.entity.Question;
 import com.hjj.interviewdog.service.es.QuestionEsDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
+//@Component
 @Slf4j
 public class IncSyncQuestionToEs {
 

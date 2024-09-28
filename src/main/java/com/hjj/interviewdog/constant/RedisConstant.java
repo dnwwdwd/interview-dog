@@ -1,7 +1,5 @@
 package com.hjj.interviewdog.constant;
 
-import java.util.Date;
-
 public interface RedisConstant {
     public static String USER_SIGN_IN_REDIS_PREFIX = "interviewdog:user:signin";
     public static String BLACK_IP_BlOOM_FILTER_KEY = "interviewdog:blackIpBloomFilterKey";

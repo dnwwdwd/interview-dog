@@ -15,8 +15,7 @@ import java.util.List;
 /**
  * 题库题目关联服务
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 public interface QuestionBankQuestionService extends IService<QuestionBankQuestion> {
 

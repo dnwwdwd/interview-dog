@@ -6,13 +6,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hjj.interviewdog.common.ErrorCode;
 import com.hjj.interviewdog.constant.CommonConstant;
-import com.hjj.interviewdog.exception.BusinessException;
 import com.hjj.interviewdog.exception.ThrowUtils;
 import com.hjj.interviewdog.mapper.QuestionBankMapper;
 import com.hjj.interviewdog.model.dto.questionBank.QuestionBankQueryRequest;
-import com.hjj.interviewdog.model.entity.Question;
 import com.hjj.interviewdog.model.entity.QuestionBank;
-import com.hjj.interviewdog.model.entity.QuestionBankQuestion;
 import com.hjj.interviewdog.model.entity.User;
 import com.hjj.interviewdog.model.vo.QuestionBankVO;
 import com.hjj.interviewdog.model.vo.UserVO;
@@ -23,9 +20,7 @@ import com.hjj.interviewdog.utils.SqlUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -37,8 +32,7 @@ import java.util.stream.Collectors;
 /**
  * 题库服务实现
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @Service
 @Slf4j
