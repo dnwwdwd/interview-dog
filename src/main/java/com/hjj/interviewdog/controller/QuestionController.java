@@ -37,8 +37,6 @@ import java.util.List;
 
 /**
  * 题目接口
- *
-
  */
 @RestController
 @RequestMapping("/question")
@@ -206,7 +204,7 @@ public class QuestionController {
      */
     @PostMapping("/list/page/vo/sentinel")
     public BaseResponse<Page<QuestionVO>> listQuestionVOByPageSentinel(@RequestBody QuestionQueryRequest questionQueryRequest,
-                                                               HttpServletRequest request) {
+                                                                       HttpServletRequest request) {
         ThrowUtils.throwIf(questionQueryRequest == null, ErrorCode.PARAMS_ERROR);
         String remoteAddr = request.getRemoteAddr();
         String host = request.getRemoteHost();
@@ -310,7 +308,7 @@ public class QuestionController {
 
     @PostMapping("/search/page/vo")
     public BaseResponse<Page<QuestionVO>> searchQuestionVOByPageFromEs(@RequestBody QuestionQueryRequest questionQueryRequest,
-                                                                 HttpServletRequest request) {
+                                                                       HttpServletRequest request) {
         long size = questionQueryRequest.getPageSize();
         // 限制爬虫
         ThrowUtils.throwIf(size > 200, ErrorCode.PARAMS_ERROR);

@@ -3,6 +3,7 @@ package com.hjj.interviewdog.model.vo;
 import cn.hutool.json.JSONUtil;
 import com.hjj.interviewdog.model.entity.Question;
 import lombok.Data;
+import lombok.ToString;
 import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
@@ -15,6 +16,7 @@ import java.util.List;
 
  */
 @Data
+@ToString
 public class QuestionVO implements Serializable {
 
     /**
