@@ -29,7 +29,6 @@ public class BlackIpUtils {
         Map map = yaml.loadAs(configInfo, Map.class);
         // 获取 IP 黑名单
         List<String> blackIpList = (List<String>) map.get("blackIpList");
-
         // 加锁防止并发
         synchronized (BlackIpUtils.class) {
             if (CollUtil.isNotEmpty(blackIpList)) {
