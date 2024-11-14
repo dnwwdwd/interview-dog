@@ -287,4 +287,20 @@ public class UserController {
         return ResultUtils.success(signInRecord);
     }
 
+    /**
+     * 更改是否展示答案
+     * @return
+     */
+    @PostMapping("/showAns/update")
+    public BaseResponse<Boolean> updateShowAns(@RequestBody UserShowAnsRequest userShowAnsRequest
+            , HttpServletRequest request) {
+        User loginUser = userService.getLoginUser(request);
+        User user = new User();
+        user.setId(loginUser.getId());
+        user.setIsShowedAns(userShowAnsRequest.getIsShowedAns());
+        boolean b = userService.updateById(user);
+        ThrowUtils.throwIf(!b, ErrorCode.SYSTEM_ERROR);
+        return ResultUtils.success(b);
+    }
+
 }

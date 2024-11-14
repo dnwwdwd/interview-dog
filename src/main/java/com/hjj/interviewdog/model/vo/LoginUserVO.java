@@ -38,6 +38,11 @@ public class LoginUserVO implements Serializable {
     private String userRole;
 
     /**
+     * 是否展示答案
+     */
+    private Integer isShowedAns;
+
+    /**
      * 创建时间
      */
     private Date createTime;
